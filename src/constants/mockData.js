@@ -1,4 +1,4 @@
-import {Author, MessageType} from './export constants.js';
+import {Author, MessageType} from './constants.js';
 
 export const mockAvatarMonet = 'https://unavatar.io/github/37t?fallback=https://source.boringavatars.com/marble/120/1337_user?colors=264653r,2a9d8f,e9c46a,f4a261,e76f51';
 export const mockAvatarUnknown = 'https://unavatar.io/unknown';
