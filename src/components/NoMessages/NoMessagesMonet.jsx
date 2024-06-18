@@ -1,10 +1,11 @@
 import './NoMessages.css';
+import monetIcon from '../../../assets/monet-chat.png';
 
 const NoMessagesMonet = () => {
   return (
     <div className="no-message-group">
       <div className="icon-container">
-        <img src="../../../assets/monet-chat.png" alt="Group Chat Icon" className="icon"/>
+        <img src={monetIcon} alt="Monet Chat Icon" className="icon"/>
       </div>
       <h2>MeetMonet: Your Personal Assistant</h2>
       <div className="info-box">
