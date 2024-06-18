@@ -1,0 +1,37 @@
+.button-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    background-color: #eaeaea;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    width: 250px;
+    margin: 5px auto 10px;
+}
+
+.chat-button {
+    background-color: transparent;
+    border: none;
+    color: #7a7a7a;
+    padding: 2px 30px;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+}
+
+.chat-button.selected {
+    background-color: #fefefe;
+    color: #000;
+    border: 2px solid #0364b7;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-button:hover {
+    color: #0364b7;
+}
+
+.chat-button:focus {
+    outline: none; /* Elimina el borde de enfoque */
+}

@@ -1,0 +1,42 @@
+.message-input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif; /* Fuente aplicada */
+    border-top: 1px solid #ccc;
+}
+
+.message-input {
+    flex: 1;
+    padding: 20px 60px 20px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fbfbfb; /* Fondo claro para el input */
+    color: #333333; /* Texto en gris oscuro */
+}
+
+.message-input:focus {
+    border: 2px solid #006cc0; /* Borde celeste al enfocar */
+    outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
+.send-button {
+    position: absolute;
+    right: 20px;
+    background: #006cc0; /* Fondo azul */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); /* Convierte el ícono a blanco */
+}

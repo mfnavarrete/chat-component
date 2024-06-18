@@ -1,0 +1,23 @@
+.badge-new-message {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #006cc0;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 2px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    z-index: 1000;
+}
+
+.close-icon {
+    margin-left: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}

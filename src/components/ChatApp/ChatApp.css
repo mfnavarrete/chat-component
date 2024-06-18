@@ -1,0 +1,27 @@
+.chat-app {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  margin: 5px;
+  padding: 2px;
+  position: relative;
+}
+
+.chat-app.minimized {
+  height: 40px;
+  overflow: hidden;
+}
+
+.chat-content.hidden {
+  display: none;
+}
+
+.chat-app.minimized .badge-new-message {
+  display: none;
+}
+
+.chat-app.minimized .badge-bottom {
+  display: none;
+}

@@ -1,0 +1,17 @@
+.message-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 5px 25px;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif; /* Fuente aplicada */
+    color: #333; /* Gris oscuro */
+}
+
+.message-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.message-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}

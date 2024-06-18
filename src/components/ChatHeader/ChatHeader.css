@@ -1,0 +1,25 @@
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.chat-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chat-icons {
+    display: flex;
+    align-items: center;
+}
+
+.chat-icons i {
+    margin-left: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}

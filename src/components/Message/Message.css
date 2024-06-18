@@ -1,0 +1,66 @@
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message.message-sent {
+    background-color: #f7f8fa;
+}
+
+.message.message-received {
+    background-color: #f0f9ff;
+}
+
+.message-avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message-content {
+    position: relative;
+}
+
+.message-header {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 5px;
+}
+
+.message-author {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.message-time {
+    font-size: 10px;
+    color: #999;
+    margin-left: 7px;
+}
+
+.message-text {
+    font-size: 11px;
+    text-align: justify;
+}
+
+.stop-button {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    padding-top: 10px;
+    color: #006cc0;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1000;
+    font-family: 'Open Sans', sans-serif;
+}
+
