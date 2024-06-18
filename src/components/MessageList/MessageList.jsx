@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import {useEffect, useRef, useState} from 'react';
 import BadgeBottom from '../Badge/BadgeBottom/BadgeBottom.jsx';
 import BadgeNewMessage from '../Badge/BadgeNewMessage/BadgeNewMessage.jsx';
@@ -67,25 +66,5 @@ const MessageList = ({
     </>
   );
 };
-
-MessageList.propTypes = {
-  messages: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      author: PropTypes.string.isRequired,
-      time: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired,
-      type: PropTypes.string.isRequired,
-      avatar: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-  newMessagesCount: PropTypes.number.isRequired,
-  showNewMessageBadge: PropTypes.bool.isRequired,
-  onCloseBadge: PropTypes.func.isRequired,
-  stopRequest: PropTypes.func.isRequired,
-  isTyping: PropTypes.bool.isRequired,
-  selectedChat: PropTypes.string.isRequired,
-};
-
 
 export default MessageList;

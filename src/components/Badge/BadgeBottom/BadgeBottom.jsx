@@ -1,5 +1,4 @@
 import './BadgeBottom.css';
-import PropTypes from 'prop-types';
 
 const BadgeBottom = ({onClick}) => {
   return (
@@ -8,9 +7,5 @@ const BadgeBottom = ({onClick}) => {
     </div>
   );
 };
-
-BadgeBottom.propTypes = {
-  onClick: PropTypes.func.isRequired
-}
 
 export default BadgeBottom;

@@ -4,7 +4,7 @@ const NoMessagesMonet = () => {
   return (
     <div className="no-message-group">
       <div className="icon-container">
-        <img src="/monet-chat.png" alt="Group Chat Icon" className="icon"/>
+        <img src="../../../assets/monet-chat.png" alt="Group Chat Icon" className="icon"/>
       </div>
       <h2>MeetMonet: Your Personal Assistant</h2>
       <div className="info-box">

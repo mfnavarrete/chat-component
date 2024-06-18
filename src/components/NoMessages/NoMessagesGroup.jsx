@@ -4,7 +4,7 @@ const NoMessagesGroup = () => {
   return (
     <div className="no-message-group">
       <div className="icon-container">
-        <img src="/group-chat.png" alt="Group Chat Icon" className="icon"/>
+        <img src="../../../assets/group-chat.png" alt="Group Chat Icon" className="icon"/>
       </div>
       <h2>Introducing Group Chat</h2>
       <div className="info-box">

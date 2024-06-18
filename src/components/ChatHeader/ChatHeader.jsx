@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import './ChatHeader.css';
 
 const ChatHeader = ({toggleMinimize, title}) => {
@@ -14,11 +13,6 @@ const ChatHeader = ({toggleMinimize, title}) => {
       </div>
     </div>
   );
-};
-
-ChatHeader.propTypes = {
-  toggleMinimize: PropTypes.func.isRequired,
-  title: PropTypes.string.isRequired,
 };
 
 export default ChatHeader;

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import {useEffect, useRef, useState} from 'react';
 import {Author, ChatType, MessageType} from '../../constants/constants.js';
 import {mockAvatarMe, mockAvatarMonet} from '../../constants/mockData.js';
@@ -138,30 +137,6 @@ const ChatApp = ({
       )}
     </div>
   );
-};
-
-ChatApp.propTypes = {
-  newMessagesCount: PropTypes.number.isRequired,
-  fetchAIUrl: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired,
-  initialGroupChatMessages: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
-    time: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired,
-  })),
-  initialMonetChatMessages: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
-    time: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired,
-  })),
 };
 
 export default ChatApp;

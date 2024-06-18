@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import {useState} from 'react';
 import './MessageInput.css';
 
@@ -30,9 +29,5 @@ const MessageInput = ({onSendMessage}) => {
     </div>
   );
 };
-
-MessageInput.propTypes = {
-  onSendMessage: PropTypes.func.isRequired
-}
 
 export default MessageInput;

@@ -1,5 +1,4 @@
 import './Message.css';
-import PropTypes from 'prop-types';
 import {Author, MessageType} from '../../constants/constants.js';
 
 const Message = ({message, stopRequest, isTyping}) => {
@@ -25,17 +24,4 @@ const Message = ({message, stopRequest, isTyping}) => {
   );
 };
 
-Message.propTypes = {
-  message: PropTypes.arrayOf(
-    PropTypes.shape({
-      avatar: PropTypes.string.isRequired,
-      author: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired,
-      time: PropTypes.string.isRequired,
-      type: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-  stopRequest: PropTypes.func.isRequired,
-  isTyping: PropTypes.bool.isRequired,
-}
 export default Message;

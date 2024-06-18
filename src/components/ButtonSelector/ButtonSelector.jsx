@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import './ButtonSelector.css';
 import {ChatType} from '../../constants/constants.js';
 
@@ -20,10 +19,5 @@ const ButtonSelector = ({selectedChat, setSelectedChat}) => {
     </div>
   );
 };
-
-ButtonSelector.propTypes = {
-  selectedChat: PropTypes.bool.isRequired,
-  setSelectedChat: PropTypes.func.isRequired,
-}
 
 export default ButtonSelector;
