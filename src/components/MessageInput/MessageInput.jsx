@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import './MessageInput.css';
+import sendIcon from '../../../assets/send-icon.png';
 
 const MessageInput = ({onSendMessage}) => {
   const [inputValue, setInputValue] = useState('');
@@ -24,7 +25,7 @@ const MessageInput = ({onSendMessage}) => {
         }}
       />
       <button className="send-button" onClick={handleSend}>
-        <img src="/send-icon.png" alt="Send" className="send-icon"/>
+        <img src={sendIcon} alt="Send" className="send-icon"/>
       </button>
     </div>
   );
