@@ -1,10 +1,10 @@
-import {Author, MessageType} from './constants.js';
+import {Author, MessageType} from './export constants.js';
 
-const mockAvatarMonet = 'https://unavatar.io/github/37t?fallback=https://source.boringavatars.com/marble/120/1337_user?colors=264653r,2a9d8f,e9c46a,f4a261,e76f51';
-const mockAvatarUnknown = 'https://unavatar.io/unknown';
-const mockAvatarMe = 'https://unavatar.io/me';
+export const mockAvatarMonet = 'https://unavatar.io/github/37t?fallback=https://source.boringavatars.com/marble/120/1337_user?colors=264653r,2a9d8f,e9c46a,f4a261,e76f51';
+export const mockAvatarUnknown = 'https://unavatar.io/unknown';
+export const mockAvatarMe = 'https://unavatar.io/me';
 
-const mockGroupChatMessages = [
+export const mockGroupChatMessages = [
   {
     id: '1',
     author: 'Ashley Smith',
@@ -55,7 +55,7 @@ const mockGroupChatMessages = [
   }
 ];
 
-const mockMonetChatMessages = [
+export const mockMonetChatMessages = [
   {
     id: '1',
     author: Author.ME,
@@ -81,11 +81,3 @@ const mockMonetChatMessages = [
     avatar: mockAvatarMonet
   }
 ];
-
-export {
-  mockAvatarMe,
-  mockAvatarMonet,
-  mockAvatarUnknown,
-  mockGroupChatMessages,
-  mockMonetChatMessages
-}
