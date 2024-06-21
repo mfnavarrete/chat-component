@@ -1,16 +1,19 @@
 {
-  "name": "chat-component-reaper-pros-test",
-  "version": "1.0.4",
+  "name": "chat-component-pros",
+  "version": "0.0.1",
+  "description": "A chat component for PROS application.",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack serve --mode development --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --mode development --open"
   },
   "keywords": [],
   "author": "mfnavarrete3",
   "license": "ISC",
-  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mfnavarrete/chat-component.git"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
     "prop-types": "^15.8.1",
@@ -27,6 +30,16 @@
     "style-loader": "^4.0.0",
     "webpack": "^5.92.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4"
+    "webpack-dev-server": "^5.0.4",
+    "webpack-merge": "^5.8.0"
+  },
+  "files": [
+    "index.js",
+    "dist",
+    "src"
+  ],
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
