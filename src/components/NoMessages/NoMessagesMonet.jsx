@@ -1,5 +1,5 @@
 import './NoMessages.css';
-import monetIcon from '../../../assets/monet-chat.png';
+import monetIcon from '../../assets/monet-chat.png';
 
 const NoMessagesMonet = () => {
   return (

@@ -1,5 +1,5 @@
 import './NoMessages.css';
-import groupIcon from '../../../assets/group-chat.png';
+import groupIcon from '../../assets/group-chat.png';
 
 const NoMessagesGroup = () => {
   return (

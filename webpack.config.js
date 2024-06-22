@@ -1,7 +1,6 @@
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
   entry: './index.js',
@@ -55,15 +54,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
-    }),
-    new CompressionPlugin({
-      test: /\.(js|css|html|ttf|woff|woff2)$/,
-      threshold: 10240,
-      minRatio: 0.8,
-    }),
+    })
   ],
-  performance: {
-    maxAssetSize: 512000, // 500 KiB
-  },
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development'
 };

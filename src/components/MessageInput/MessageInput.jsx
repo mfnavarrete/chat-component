@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import './MessageInput.css';
-import sendIcon from '../../../assets/send-icon.png';
+import sendIcon from '../../assets/send-icon.png';
 
 const MessageInput = ({onSendMessage}) => {
   const [inputValue, setInputValue] = useState('');
