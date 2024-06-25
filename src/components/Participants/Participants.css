@@ -1,0 +1,57 @@
+.participants {
+    padding: 20px;
+    max-height: 500px; /* Ajustar según sea necesario */
+    overflow-y: auto; /* Para permitir el scroll */
+}
+
+.participants-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.participants-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.participant-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.participant-avatar-wrapper {
+    position: relative;
+}
+
+.participant-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.participant-status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white; /* Para un pequeño borde blanco alrededor del indicador */
+}
+
+.participant-status.online {
+    background-color: #7CFC00;
+}
+
+.participant-status.offline {
+    background-color: red;
+}
+
+.participant-name {
+    font-size: 14px;
+}

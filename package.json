@@ -1,6 +1,6 @@
 {
-  "name": "chat-component-react-pros",
-  "version": "0.0.3",
+  "name": "chat-component-pros",
+  "version": "0.0.1",
   "description": "A chat component for PROS application.",
   "main": "index.js",
   "scripts": {

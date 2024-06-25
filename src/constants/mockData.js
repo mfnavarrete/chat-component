@@ -81,3 +81,18 @@ export const mockMonetChatMessages = [
     avatar: mockAvatarMonet
   }
 ];
+
+export const mockParticipants = [
+  { avatar: `https://unavatar.io/1`, name: 'Emily Nguyen', status: 'online' },
+  { avatar: `https://unavatar.io/2`, name: 'Abby Barret', status: 'offline' },
+  { avatar: `https://unavatar.io/3`, name: 'Michael Johnson', status: 'online' },
+  { avatar: `https://unavatar.io/4`, name: 'Sophia Lee', status: 'offline' },
+  { avatar: `https://unavatar.io/5`, name: 'David Smith', status: 'online' },
+  { avatar: `https://unavatar.io/6`, name: 'Olivia Brown', status: 'offline' },
+  { avatar: `https://unavatar.io/7`, name: 'James Williams', status: 'online' },
+  { avatar: `https://unavatar.io/8`, name: 'Isabella Davis', status: 'offline' },
+  { avatar: `https://unavatar.io/9`, name: 'Lucas Martinez', status: 'online' },
+  { avatar: `https://unavatar.io/0`, name: 'Ava Wilson', status: 'offline' },
+];
+
+

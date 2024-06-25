@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { Author, ChatType, MessageType } from './src/constants/constants';
-import { mockAvatarMe, mockAvatarMonet, mockAvatarUnknown, mockGroupChatMessages, mockMonetChatMessages } from './src/constants/mockData';
+import { mockAvatarMe, mockAvatarMonet, mockAvatarUnknown, mockGroupChatMessages, mockMonetChatMessages, mockParticipants } from './src/constants/mockData';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -15,5 +15,6 @@ export {
   mockAvatarMonet,
   mockAvatarUnknown,
   mockGroupChatMessages,
-  mockMonetChatMessages
+  mockMonetChatMessages,
+  mockParticipants,
 };

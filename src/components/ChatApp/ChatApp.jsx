@@ -1,12 +1,13 @@
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { Author, ChatType, MessageType } from '../../constants/constants.js';
-import { mockAvatarMe, mockAvatarMonet } from '../../constants/mockData.js';
+import { mockAvatarMe, mockAvatarMonet, mockAvatarUnknown } from '../../constants/mockData.js';
 import { dateTimeTwoDigits } from '../../utils/dateTime.js';
 import ButtonSelector from '../ButtonSelector/ButtonSelector';
 import './ChatApp.css';
 import ChatHeader from '../ChatHeader/ChatHeader';
 import MessageInput from '../MessageInput/MessageInput';
 import MessageList from '../MessageList/MessageList';
+import Participants from '../Participants/Participants';
 
 const ChatApp = ({
                    newMessagesCount,
@@ -16,6 +17,7 @@ const ChatApp = ({
                    width,
                    initialGroupChatMessages = [],
                    initialMonetChatMessages = [],
+                   participants = [],
                  }) => {
   const [isMinimized, setIsMinimized] = useState(false);
   const [count, setCount] = useState(newMessagesCount);
@@ -23,6 +25,7 @@ const ChatApp = ({
   const [showBadge, setShowBadge] = useState(true);
   const [messages, setMessages] = useState(initialGroupChatMessages);
   const [isTyping, setIsTyping] = useState(false);
+  const [showParticipants, setShowParticipants] = useState(false);
   const controllerRef = useRef(null);
 
   const handleSendMessage = async (text) => {
@@ -94,6 +97,10 @@ const ChatApp = ({
     setIsMinimized(!isMinimized);
   };
 
+  const toggleParticipants = () => {
+    setShowParticipants(!showParticipants);
+  };
+
   useEffect(() => {
     setCount(newMessagesCount);
     setShowBadge(true);
@@ -106,20 +113,26 @@ const ChatApp = ({
   return (
       <div className={`chat-app ${isMinimized ? 'minimized' : ''}`}
            style={{ height: isMinimized ? '40px' : height, width }}>
-        <ChatHeader toggleMinimize={toggleMinimize} title={title} />
+        <ChatHeader toggleMinimize={toggleMinimize} title={title} toggleParticipants={toggleParticipants} />
         {!isMinimized && (
             <>
-              <ButtonSelector selectedChat={selectedChat} setSelectedChat={setSelectedChat} />
-              <MessageList
-                  messages={messages ?? []}
-                  newMessagesCount={count}
-                  showNewMessageBadge={showBadge && !isMinimized}
-                  onCloseBadge={() => setShowBadge(false)}
-                  stopRequest={stopRequest}
-                  isTyping={isTyping}
-                  selectedChat={selectedChat}
-              />
-              <MessageInput onSendMessage={handleSendMessage} />
+              {showParticipants ? (
+                  <Participants participants={participants} />
+              ) : (
+                  <>
+                    <ButtonSelector selectedChat={selectedChat} setSelectedChat={setSelectedChat} />
+                    <MessageList
+                        messages={messages ?? []}
+                        newMessagesCount={count}
+                        showNewMessageBadge={showBadge && !isMinimized}
+                        onCloseBadge={() => setShowBadge(false)}
+                        stopRequest={stopRequest}
+                        isTyping={isTyping}
+                        selectedChat={selectedChat}
+                    />
+                    <MessageInput onSendMessage={handleSendMessage} />
+                  </>
+              )}
             </>
         )}
       </div>
